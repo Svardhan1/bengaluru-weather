@@ -1,6 +1,8 @@
+"""
 🌦️ Bengaluru Weather Analytics Dashboard
 A real-time weather analytics dashboard for Bengaluru, India — built to demonstrate data analyst skills including live API integration, historical trend analysis, statistical anomaly detection, and multi-city comparison.
-🔗 Live Demo: bengaluru-weather.vercel.app
+
+🔗 Live Demo: https://bengaluru-weather.vercel.app
 
 📊 What This Project Does
 This is not just a weather app — it's a data analytics project that tells the story of Bengaluru's climate through data.
@@ -85,3 +87,4 @@ Deployment — CI/CD pipeline via GitHub + Vercel
 Vardhan S
 
 Data source: Open-Meteo | Built with React + Recharts | Deployed on Vercel
+"""
