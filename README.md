@@ -1,4 +1,4 @@
-""
+
 🌦️ Bengaluru Weather Analytics Dashboard
 A real-time weather analytics dashboard for Bengaluru, India — built to demonstrate data analyst skills including live API integration, historical trend analysis, statistical anomaly detection, and multi-city comparison.
 
@@ -73,18 +73,18 @@ Open http://localhost:3000 in your browser.
 src/
 └── App.js          # Main dashboard — all components, API calls, and analytics logic
 
-💡 Skills Demonstrated
 
+
+💡 Skills Demonstrated
+**
 API Integration — fetching and handling real-time + historical data
 Data Wrangling — transforming raw daily data into monthly aggregates
 Statistical Analysis — mean, standard deviation, anomaly detection (z-score method)
 Data Visualization — 8 chart types across multiple dimensions
 Storytelling with Data — auto-generated insights from computed metrics
 Deployment — CI/CD pipeline via GitHub + Vercel
-
-
+**
 👤 Author
 Vardhan S
 
 Data source: Open-Meteo | Built with React + Recharts | Deployed on Vercel
-""
