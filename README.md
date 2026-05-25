@@ -76,14 +76,14 @@ src/
 
 
 💡 Skills Demonstrated
-**
+***
 API Integration — fetching and handling real-time + historical data
 Data Wrangling — transforming raw daily data into monthly aggregates
 Statistical Analysis — mean, standard deviation, anomaly detection (z-score method)
 Data Visualization — 8 chart types across multiple dimensions
 Storytelling with Data — auto-generated insights from computed metrics
 Deployment — CI/CD pipeline via GitHub + Vercel
-**
+***
 👤 Author
 Vardhan S
 
