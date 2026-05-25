@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+🌦️ Bengaluru Weather Analytics Dashboard
+A real-time weather analytics dashboard for Bengaluru, India — built to demonstrate data analyst skills including live API integration, historical trend analysis, statistical anomaly detection, and multi-city comparison.
+🔗 Live Demo: bengaluru-weather.vercel.app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+📊 What This Project Does
+This is not just a weather app — it's a data analytics project that tells the story of Bengaluru's climate through data.
+Live Data (Real-Time)
 
-## Available Scripts
+Current temperature, humidity, wind speed, and conditions
+7-day forecast with daily max/min and rainfall
+Hourly temperature and rain probability for next 24 hours
 
-In the project directory, you can run:
+2024 Historical Analysis (365 days of data)
 
-### `npm start`
+Monthly rainfall pattern — identifying monsoon dominance
+Monthly average temperature trend across the full year
+Temperature vs humidity correlation (scatter plot)
+Statistical anomaly detection — flags days more than 2 standard deviations from the annual mean
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Analyst Insights (Auto-Generated)
+The dashboard automatically computes and displays findings such as:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+What % of annual rainfall falls in the monsoon months (Jun–Sep)
+How many unusually hot/cold days occurred in 2024
+Bengaluru's temperature stability compared to coastal cities
+Peak monsoon month and driest month contrast ratio
 
-### `npm test`
+City Comparison
+Side-by-side comparison of Bengaluru, Chennai, and Mumbai across:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Monthly average temperature (line chart)
+Monthly rainfall (bar chart)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🛠️ Tech Stack
+TechnologyPurposeReact.jsFrontend frameworkRechartsData visualizations (line, bar, scatter charts)AxiosAPI callsdate-fnsDate formattingOpen-Meteo APILive forecast + historical weather data (free, no API key)VercelDeployment and hosting
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+📡 Data Source
+Open-Meteo — a free, open-source weather API with no API key required.
+Two endpoints used:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+api.open-meteo.com/v1/forecast — live current conditions and 7-day forecast
+archive-api.open-meteo.com/v1/archive — historical daily data (2024 full year)
 
-### `npm run eject`
+Location: Bengaluru, Karnataka — Latitude 12.97°N, Longitude 77.59°E
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🔍 Key Analytical Findings (2024)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+52% of annual rainfall falls in just 4 monsoon months (Jun–Sep)
+25 anomalous hot days detected in 2024 using 2σ statistical threshold
+Annual temperature range is only ~20°C — unusually stable for an Indian city
+October was the peak rainfall month with 240mm total
+April was the hottest month with an average max of 37°C
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+🚀 Run Locally
+bash# Clone the repository
+git clone https://github.com/Svardhan1/bengaluru-weather.git
 
-## Learn More
+# Navigate into the project
+cd bengaluru-weather
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Install dependencies
+npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Start the development server
+npm start
+Open http://localhost:3000 in your browser.
 
-### Code Splitting
+📁 Project Structure
+src/
+└── App.js          # Main dashboard — all components, API calls, and analytics logic
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+💡 Skills Demonstrated
 
-### Analyzing the Bundle Size
+API Integration — fetching and handling real-time + historical data
+Data Wrangling — transforming raw daily data into monthly aggregates
+Statistical Analysis — mean, standard deviation, anomaly detection (z-score method)
+Data Visualization — 8 chart types across multiple dimensions
+Storytelling with Data — auto-generated insights from computed metrics
+Deployment — CI/CD pipeline via GitHub + Vercel
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+👤 Author
+Vardhan S
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Data source: Open-Meteo | Built with React + Recharts | Deployed on Vercel
